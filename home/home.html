@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竹墨清水若尘的个人主页</title>
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+<header>
+  <!-- 左侧logo -->
+  <a href="#" class="logo">竹墨清水若尘</a>
+  <!-- 右侧导航 -->
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</header>
+
+<section>
+  <img src="./images/stars.png" class="stars" alt="">
+  <img src="./images/moon.png" class="moon" alt="">
+  <img src="./images/mountains_behind.png" class="behind" alt="">
+  <h2 class="txt">Welcome to this page！</h2>
+  <a href="#" class="btn">Explore</a>
+  <img src="./images/mountains_front.png" class="front" alt="">
+</section>
+  
+  <div class="content">
+    <h2 align="center">欢迎来到竹墨清水若尘的个人主页！</h2>
+    <br><br><br>
+    <p>
+      简述：本网站为对一个<strong style="color: #FFD700;">究极菜鸟</strong>的个人简介，详细可见About部分。如果有兴趣了解or想要进行合作or想要教我些东西(十分欢迎大佬来教我，手动狗头)，请前往Contact部分，可在该页面找到菜鸟联系方式。
+      <br><br>
+      菜鸟目前在以下部分暂时有些许了解：C语言小程序，Python小程序，网络空间安全...(前端，后端，了解尚浅)。您若需要代写部分以上easy program或者需要在部分大的项目中合作，可以联系本人<span style="color: #00FFFF;">(shangkoufanchi,bushi)</span>。
+      <br><br>
+      当前还在学习ing，所以大佬轻喷。暂时在学习Java 前端 和Golang还有部分专业知识(网络空间安全相关)。
+      <br><br>
+      当然您也可以找到本人对其他方面进行一番探讨，也非常欢迎，比如游戏&音乐&运动&校友谈论 <span style="text-decoration: line-through;color: #FFC0CB;">( dalaodaiwo )</span>...
+      <br><br><br><br><br>
+    </p>
+  </div>
+  <p align="center" class="statement">本网页的搭建和源码均参考过部分大佬，such as <a href="https://v.douyin.com/ieqPPMdq/" target="_blank" id="author">令人脱发的代码</a>、<a href=" https://v.douyin.com/ieq5CA1q/" target="_blank" id="author">小k师兄</a>。如有侵权，非常抱歉，请联系本人</p>
+  <script>
+    const stars = document.querySelector('.stars')
+    const moon = document.querySelector('.moon')
+    const behind = document.querySelector('.behind')
+    const front = document.querySelector('.front')
+    const txt = document.querySelector('.txt')
+    const btn = document.querySelector('.btn')
+    const header = document.querySelector('header')
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      behind.style.top = value * 0.5 + 'px'
+      front.style.top = value * 0 + 'px'
+      txt.style.marginRight = value * 4 + 'px'
+      txt.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+  </script>
+</body>
+</html>
